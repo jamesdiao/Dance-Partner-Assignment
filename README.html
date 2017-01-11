@@ -123,7 +123,7 @@ $(document).ready(function () {
 <h1>Dance Partner Assignment</h1>
 <div id="james-diao-11-january-2017" class="section level4">
 <h4>James Diao, 11 January 2017</h4>
-<p>Implementing the Kuhn-Munkres (Hungarian) algorithm for assigning dance partners by minimizing a summed cost function.</p>
+<p>Implementing the Hungarian (Munkres) algorithm for assigning dance partners by minimizing a summed cost function.</p>
 <hr />
 </div>
 <div id="clone-repos" class="section level3">
@@ -151,16 +151,24 @@ $(document).ready(function () {
 </li>
 </ol>
 <ul>
-<li><code>$ python setup.py install</code><br />
+<li>$ python setup.py install`<br />
 </li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
 <li>Edit <code>leader_matrix.csv</code> and <code>follower_matrix.csv</code> with the correct names and values in the same format.<br />
 </li>
 <li>Define a cost function in python language and write this as a single line in <code>cost_function.txt</code>.<br />
-C(L,F) is a function of L (the leader’s ranking of the follower) and F (the follower’s ranking of the leader). The default is <span class="math inline">\(L^2 + F^2\)</span>.<br />
-We suggest giving additional weight the smaller group (e.g., if there are fewer leaders, weight the leader preferences higher).<br />
 </li>
+</ol>
+<ul>
+<li>C(L,F) is a function of L (the leader’s ranking of the follower) and F (the follower’s ranking of the leader).<br />
+</li>
+<li>The default is <span class="math inline">\(C(L,F) = L^2 + F^2\)</span>.<br />
+</li>
+<li>We suggest giving additional weight the smaller group (e.g., if there are fewer leaders, weight the leader preferences higher).<br />
+</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
 <li>Run <code>Partner_Assignment.py</code> with:<br />
 </li>
 </ol>
