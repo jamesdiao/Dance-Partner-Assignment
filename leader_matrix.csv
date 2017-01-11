@@ -1,0 +1,11 @@
+Follower Preferences,Follower_1,Follower_2,Follower_3,Follower_4,Follower_5,Follower_6,Follower_7,Follower_8,Follower_9,Follower_10
+Leader_1,2,4,10,6,9,8,3,7,1,5
+Leader_2,8,7,9,1,10,3,4,2,6,5
+Leader_3,5,4,8,7,1,3,9,10,2,6
+Leader_4,4,3,2,6,9,5,7,10,1,8
+Leader_5,3,8,1,9,10,5,4,2,7,6
+Leader_6,7,9,1,6,10,4,2,5,8,3
+Leader_7,3,6,5,7,1,4,9,2,8,10
+Leader_8,7,10,4,3,2,5,6,8,9,1
+Leader_9,4,2,9,10,7,8,5,3,6,1
+Leader_10,5,3,4,10,9,8,7,2,1,6

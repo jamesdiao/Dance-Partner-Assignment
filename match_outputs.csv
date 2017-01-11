@@ -1,0 +1,14 @@
+Leader_Name,Choice_Received,Follower_Name,Choice_Received,Penalty
+Leader_1,2,Follower_1,3,13
+Leader_2,4,Follower_7,2,20
+Leader_3,6,Follower_10,7,33
+Leader_4,1,Follower_9,2,8
+Leader_5,1,Follower_3,1,5
+Leader_6,4,Follower_6,3,19
+Leader_7,1,Follower_5,4,20
+Leader_8,3,Follower_4,5,23
+Leader_9,2,Follower_2,3,13
+Leader_10,2,Follower_8,3,13
+"
+Total Penalty
+",167
