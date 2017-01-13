@@ -7,6 +7,32 @@ Implementing the Hungarian (Munkres) algorithm for assigning dance partners by m
 
 -------------------------------------------------------------
 
+### METHOD DESCRIPTION
+
+In the simplest terms, the match works like this:  
+<br />
+1. Let there by L leaders and F followers.  
+2. All leaders rank their desired followers from 1-F, and all followers rank their desired leaders from 1-L.  
+This information is all entered into an LxF matrix, and an FxL matrix, respectively.  
+3. All possible ballroom partnerships are assigned a score, or "cost."  
+This cost is a function of the two preferences: the preference of the leader (L), and the preference of the follower (F).  
+For example, let's say Andrew ranks Alyssa $4/10$ and Alyssa ranks Andrew $2/8$, and the cost function is $L^2 + F^2$.  
+In that case, the "cost" of the partnership is $4^2 + 2^2 = 20$. The lower the cost, the more ideal the match.  
+4. The algorithm finds the set of all matches that minimize the overall cost.  
+<br />
+The repo contains sample input and output data, which should give you an clearer idea of how it works. 
+<br />
+For more technical details, see: https://en.wikipedia.org/wiki/Hungarian_algorithm
+
+
+Why don't we use the stable match algorithm?  
+Stable match strongly favors one group over the other, in a way that cannot be tuned the way a cost function can.  
+In trying it out with sample data, I would often see a leader get their 1st choice, but as a follower's 8th choice.  
+Moreover, it is also annoying to implement with unequal numbers of leaders and followers. 
+
+
+-------------------------------------------------------------
+
 ### CLONE REPOS
 
 1. Clone this source repository: <br />

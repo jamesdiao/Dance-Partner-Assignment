@@ -126,6 +126,24 @@ $(document).ready(function () {
 <p>Implementing the Hungarian (Munkres) algorithm for assigning dance partners by minimizing a summed cost function.</p>
 <hr />
 </div>
+<div id="method-description" class="section level3">
+<h3>METHOD DESCRIPTION</h3>
+<p>In the simplest terms, the match works like this:<br />
+<br /> 1. Let there by L leaders and F followers.<br />
+2. All leaders rank their desired followers from 1-F, and all followers rank their desired leaders from 1-L.<br />
+This information is all entered into an LxF matrix, and an FxL matrix, respectively.<br />
+3. All possible ballroom partnerships are assigned a score, or “cost.”<br />
+This cost is a function of the two preferences: the preference of the leader (L), and the preference of the follower (F).<br />
+For example, let’s say Andrew ranks Alyssa <span class="math inline">\(4/10\)</span> and Alyssa ranks Andrew <span class="math inline">\(2/8\)</span>, and the cost function is <span class="math inline">\(L^2 + F^2\)</span>.<br />
+In that case, the “cost” of the partnership is <span class="math inline">\(4^2 + 2^2 = 20\)</span>. The lower the cost, the more ideal the match.<br />
+4. The algorithm finds the set of all matches that minimize the overall cost.<br />
+<br /> The repo contains sample input and output data, which should give you an clearer idea of how it works. <br /> For more technical details, see: <a href="https://en.wikipedia.org/wiki/Hungarian_algorithm" class="uri">https://en.wikipedia.org/wiki/Hungarian_algorithm</a></p>
+<p>Why don’t we use the stable match algorithm?<br />
+Stable match strongly favors one group over the other, in a way that cannot be tuned the way a cost function can.<br />
+In trying it out with sample data, I would often see a leader get their 1st choice, but as a follower’s 8th choice.<br />
+Moreover, it is also annoying to implement with unequal numbers of leaders and followers.</p>
+<hr />
+</div>
 <div id="clone-repos" class="section level3">
 <h3>CLONE REPOS</h3>
 <ol style="list-style-type: decimal">
