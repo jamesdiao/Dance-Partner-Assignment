@@ -16,8 +16,8 @@ In the simplest terms, the match works like this:
 This information is all entered into an LxF matrix, and an FxL matrix, respectively.  
 3. All possible ballroom partnerships are assigned a score, or "cost."  
 This cost is a function of the two preferences: the preference of the leader (L), and the preference of the follower (F).  
-For example, let's say Andrew ranks Alyssa $4/10$ and Alyssa ranks Andrew $2/8$, and the cost function is $L^2 + F^2$.  
-In that case, the "cost" of the partnership is $4^2 + 2^2 = 20$. The lower the cost, the more ideal the match.  
+For example, let's say Andrew ranks Alyssa 4/10 and Alyssa ranks Andrew 2/8, and the cost function is L^2 + F^2.  
+In that case, the "cost" of the partnership is 4^2 + 2^2 = 20. The lower the cost, the more ideal the match.  
 4. The algorithm finds the set of all matches that minimize the overall cost.  
 <br />
 The repo contains sample input and output data, which should give you an clearer idea of how it works. 
@@ -49,7 +49,7 @@ Moreover, it is also annoying to implement with unequal numbers of leaders and f
 2. Edit `leader_matrix.csv` and `follower_matrix.csv` with the correct names and values in the same format.  
 3. Define a cost function in python language and write this as a single line in `cost_function.txt`.  
  - C(L,F) is a function of L (the leader's ranking of the follower) and F (the follower's ranking of the leader).  
- - The default is $C(L,F) = L^2 + F^2$.  
+ - The default is C(L,F) = L^2 + F^2.  
  - We suggest giving additional weight the smaller group (e.g., if there are fewer leaders, weight the leader preferences higher).  
 4. Run `Partner_Assignment.py` with:  
  - `$ python Partner_Assignment.py`
