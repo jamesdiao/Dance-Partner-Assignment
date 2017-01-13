@@ -19,7 +19,7 @@ Implementing the Hungarian (Munkres) algorithm for assigning dance partners by m
 ### RUNNING THE SCRIPT
 
 1. Install the munkres package by running:  
- - $ python setup.py install`  
+ - `$ python setup.py install`  
 2. Edit `leader_matrix.csv` and `follower_matrix.csv` with the correct names and values in the same format.  
 3. Define a cost function in python language and write this as a single line in `cost_function.txt`.  
  - C(L,F) is a function of L (the leader's ranking of the follower) and F (the follower's ranking of the leader).  
