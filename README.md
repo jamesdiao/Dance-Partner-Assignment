@@ -11,7 +11,7 @@ Implementing the Hungarian (Munkres) algorithm for assigning dance partners by m
 
 In the simplest terms, the match works like this:  
 <br />
-1. Let there by L leaders and F followers.  
+1. Let there be L leaders and F followers.  
 2. All leaders rank their desired followers from 1-F, and all followers rank their desired leaders from 1-L.  
 This information is all entered into an LxF matrix, and an FxL matrix, respectively.  
 3. All possible ballroom partnerships are assigned a score, or "cost."  
